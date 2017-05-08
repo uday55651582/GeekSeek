@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+	<!-- Base Definition -->
+	<definition name="base-definition"
+		template="/WEB-INF/views/tiles/layouts/defaultLayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header"
+			value="/WEB-INF/views/tiles/template/defaultHeader.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/tiles/template/defaultMenu.jsp" /> 
+		<put-attribute name="body" value="" />
+		<put-attribute name="LeftMenu"
+			value="/WEB-INF/views/tiles/template/defaultLeftMenu.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/views/tiles/template/defaultFooter.jsp" />
+	</definition>
+
+	<!-- Home Page -->
+	<definition name="home" extends="base-definition">
+		<put-attribute name="title" value="Welcome" />
+		<put-attribute name="body" value="/WEB-INF/views/pages/home.jsp" />
+	</definition>
+	
+	<!-- Tourguide Page -->
+	<definition name="tourguide" extends="base-definition">
+		<put-attribute name="title" value="tourguide" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/tourguide.jsp" />
+	</definition>
+	
+	<!-- Tour Gallery Page -->
+	<definition name="tourgallery" extends="base-definition">
+		<put-attribute name="title" value="tourgallery" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/tourgallery.jsp" />
+	</definition>
+	
+	<!-- Exotic places -->
+	<definition name="exoticplaces" extends="base-definition">
+		<put-attribute name="title" value="exoticplaces" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/exoticplaces.jsp" />
+	</definition>
+
+	<!-- Registration Page -->
+	<definition name="registration" extends="base-definition">
+		<put-attribute name="title" value="Registration" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/registration.jsp" />
+	</definition>
+	
+	<!-- Contact Page -->
+	<definition name="contact" extends="base-definition">
+		<put-attribute name="title" value="contact" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/contact.jsp" />
+	</definition>
+	
+<!-- Add Article Page -->
+	<definition name="AddArticle" extends="base-definition">
+		<put-attribute name="title" value="AddArticle" />
+<put-attribute name="body"
+   value="/WEB-INF/views/pages/AddArticle.jsp" />
+   </definition>
+   
+   <!-- My Articles Page -->
+	<definition name="myarticles" extends="base-definition">
+		<put-attribute name="title" value="myarticles" />
+		<put-attribute name="body" value="/WEB-INF/views/pages/myarticles.jsp" />
+	</definition>
+
+	<!-- Login Page -->
+	<definition name="login" extends="base-definition">
+		<put-attribute name="title" value="Login" />
+		<put-attribute name="body" value="/WEB-INF/views/pages/login.jsp" />
+	</definition>
+
+	<!-- welcome -->
+	<definition name="welcome" extends="base-definition">
+		<put-attribute name="title" value="Welcome" />
+		<put-attribute name="body" value="/WEB-INF/views/pages/welcome.jsp" />
+	</definition>
+
+</tiles-definitions>
